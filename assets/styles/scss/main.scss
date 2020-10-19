@@ -1,0 +1,21 @@
+// abstracts
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+// base
+@import 'base/settings';
+@import 'base/normalize';
+@import 'base/typography';
+
+//components
+@import 'components/buttons';
+@import 'components/form';
+@import 'components/ol';
+@import 'components/switch';
+
+// layout
+@import 'layout/header';
+@import 'layout/footer';
+
+// @media
+@import 'base/media';
