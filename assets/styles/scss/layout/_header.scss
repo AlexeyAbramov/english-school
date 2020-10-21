@@ -1,6 +1,6 @@
 // header
 .header {
-  box-shadow: $box-shadow;
+  box-shadow: $box-shadow-1;
   background: $color-white;
   &__content {
     @include dflexsbcenter;
@@ -15,7 +15,7 @@
       font-family: "ProximaNova-Bold", sans-serif;
       font-size: 18px;
       font-weight: bold;
-      line-height: 122.222222222%;
+      @include line-height;
     }
     &__item{
       display: inline-flex;

@@ -24,3 +24,19 @@
 @mixin border-radius {
   border-radius: 24px;
 }
+//line-height
+@mixin line-height {
+  line-height: 122.222222222%;
+}
+//icons
+@mixin icon($url, $top) {
+  @include absolute;
+  width: 20px;
+  height: 20px;
+  top: $top;
+  left: -30px;
+  background: url($url) no-repeat center center;
+  @include border-radius;
+  background-color: $color-white;
+  box-shadow: $box-shadow-icon;
+}

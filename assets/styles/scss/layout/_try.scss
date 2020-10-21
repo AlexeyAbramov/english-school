@@ -1,37 +1,65 @@
 // try
 .try {
   &__content {
-    background: url("../../../assets/images/try/bg.jpg") no-repeat top left;
+    background: url('../../../assets/images/try/bg.jpg') no-repeat top left;
     height: 330px;
     @include border-radius;
+    box-shadow: $box-shadow-1;
   }
-  &__row{
-      display: flex;
-      justify-content: space-between;
+  &__row {
+    display: flex;
+    justify-content: space-between;
   }
-  &__column{
-      flex: 0 1 40%;
-  }
-  .column-about{
-      &__title{
-          color: $color-orange;
-          font-weight: normal;
-          text-transform: uppercase;
-          text-align: end;
-          b{
-              display: block;
-              font-family: 'ProximaNova-Bold', sans-serif;
-              line-height: 122.222222222%;
-              color: $color-violet;
-          }
+  .column-qa {
+    flex: 0 1 45%;
+    margin: 90px 0 0 23%;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: $letter-spacing;
+    @include line-height;
+    &__q {
+      color: $color-violet;
+      position: relative;
+      &::before {
+        @include icon('../../../assets/images/try/quest.png', -5px);
       }
-      &__text{
-          font-size: 18px;
-          line-height: 122.222222222%;
-          color: $color-grey-text;
-          text-align: end;
-          letter-spacing: $letter-spacing;
-          margin-top: 20px;
+    }
+    &__a {
+      position: relative;
+      margin: 46px 0 0 35px;
+      color: $color-orange;
+      background: rgba(255, 255, 255, 0.48);
+      &::before {
+        @include icon('../../../assets/images/try/check.png', 10px);
       }
+    }
+  }
+  .column-about {
+    flex: 0 1 39%;
+    margin: 52px 23px 0 0;
+    &__title {
+      color: $color-orange;
+      font-weight: normal;
+      text-transform: uppercase;
+      text-align: end;
+      b {
+        display: block;
+        font-family: 'ProximaNova-Bold', sans-serif;
+        @include line-height;
+        color: $color-violet;
+      }
+    }
+    &__text {
+      font-size: 18px;
+      @include line-height;
+      color: $color-grey-text;
+      text-align: end;
+      letter-spacing: $letter-spacing;
+      margin-top: 20px;
+    }
+  }
+  .button-try {
+    margin: 58px 23px 0 0;
+    text-align: end;
   }
 }
