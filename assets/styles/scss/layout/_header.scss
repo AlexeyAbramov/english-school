@@ -1,0 +1,38 @@
+// header
+.header {
+  box-shadow: $box-shadow;
+  background: $color-white;
+  &__content {
+    @include dflexsbcenter;
+    height: 96px;
+  }
+  //nav
+  .nav-header {
+    flex: 0 1 64%;
+    height: inherit;
+    &__list {
+      @include dflexsbcenter;
+      font-family: "ProximaNova-Bold", sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 122.222222222%;
+    }
+    &__item{
+      display: inline-flex;
+      align-items: center;
+      padding: 0 62px;
+      text-transform: uppercase;
+      transition: .5s, padding 0s;
+      &:hover{
+        @include hover-effect;
+      }
+    }
+    &__link{
+      color: $color-violet-dark;
+    }
+    &__link[href^="tel:"] {
+      color: $color-violet-dark;
+      margin-left: 5px;
+    }
+  }
+}

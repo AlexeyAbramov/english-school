@@ -1,0 +1,209 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 100%;
+}
+
+._container {
+  max-width: 1375px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.main {
+  margin-top: 80px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+ul,
+ul > li {
+  height: 100%;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Blur images when they have no alt attribute */
+img:not([alt]) {
+  filter: blur(10px);
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+}
+@font-face {
+  font-family: "ProximaNova-Regular", sans-serif;
+  src: url("../../../fonts/ProximaNova-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "ProximaNova-Bold", sans-serif;
+  src: url("../../../fonts/ProximaNova-Bold.woff") format("woff");
+}
+body {
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+.header {
+  box-shadow: 1px 10px 10px rgba(102, 62, 51, 0.02), 10px 20px 20px rgba(102, 62, 51, 0.04), 20px 30px 30px rgba(102, 62, 51, 0.06), 55px 65px 44px rgba(197, 104, 78, 0.13);
+  background: #fff;
+}
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 96px;
+}
+.header .nav-header {
+  flex: 0 1 64%;
+  height: inherit;
+}
+.header .nav-header__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "ProximaNova-Bold", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 122.222222222%;
+}
+.header .nav-header__item {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 62px;
+  text-transform: uppercase;
+  transition: 0.5s, padding 0s;
+}
+.header .nav-header__item:hover {
+  background: #faefe3;
+  cursor: pointer;
+}
+.header .nav-header__link {
+  color: #0d006a;
+}
+.header .nav-header__link[href^="tel:"] {
+  color: #0d006a;
+  margin-left: 5px;
+}
+
+.try__content {
+  background: url("../../../assets/images/try/bg.jpg") no-repeat top left;
+  height: 330px;
+  border-radius: 24px;
+}
+.try__row {
+  display: flex;
+  justify-content: space-between;
+}
+.try__column {
+  flex: 0 1 40%;
+}
+.try .column-about__title {
+  color: #fe805c;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: end;
+}
+.try .column-about__title b {
+  display: block;
+  font-family: "ProximaNova-Bold", sans-serif;
+  line-height: 122.222222222%;
+  color: #4643d3;
+}
+.try .column-about__text {
+  font-size: 18px;
+  line-height: 122.222222222%;
+  color: #443e3e;
+  text-align: end;
+  letter-spacing: 1.6px;
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,37 @@
+// try
+.try {
+  &__content {
+    background: url("../../../assets/images/try/bg.jpg") no-repeat top left;
+    height: 330px;
+    @include border-radius;
+  }
+  &__row{
+      display: flex;
+      justify-content: space-between;
+  }
+  &__column{
+      flex: 0 1 40%;
+  }
+  .column-about{
+      &__title{
+          color: $color-orange;
+          font-weight: normal;
+          text-transform: uppercase;
+          text-align: end;
+          b{
+              display: block;
+              font-family: 'ProximaNova-Bold', sans-serif;
+              line-height: 122.222222222%;
+              color: $color-violet;
+          }
+      }
+      &__text{
+          font-size: 18px;
+          line-height: 122.222222222%;
+          color: $color-grey-text;
+          text-align: end;
+          letter-spacing: $letter-spacing;
+          margin-top: 20px;
+      }
+  }
+}
