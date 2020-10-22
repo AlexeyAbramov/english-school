@@ -2,9 +2,9 @@
 .try {
   &__content {
     background: url('../../../assets/images/try/bg.jpg') no-repeat top left;
-    height: 330px;
     @include border-radius;
     box-shadow: $box-shadow-1;
+    padding-bottom: 34px;
   }
   &__row {
     display: flex;
@@ -14,6 +14,8 @@
     flex: 0 1 45%;
     margin: 90px 0 0 23%;
     font-size: 18px;
+    font-family: 'ProximaNova',sans-serif;
+    font-weight: 400;
     text-transform: uppercase;
     letter-spacing: $letter-spacing;
     @include line-height;
@@ -44,7 +46,8 @@
       text-align: end;
       b {
         display: block;
-        font-family: 'ProximaNova-Bold', sans-serif;
+        font-family: 'ProximaNova', sans-serif;
+        font-weight: 700;
         @include line-height;
         color: $color-violet;
       }
@@ -54,6 +57,8 @@
       @include line-height;
       color: $color-grey-text;
       text-align: end;
+      font-family: 'ProximaNova', sans-serif;
+      font-weight: 400;
       letter-spacing: $letter-spacing;
       margin-top: 20px;
     }
@@ -61,5 +66,8 @@
   .button-try {
     margin: 58px 23px 0 0;
     text-align: end;
+    &__link{
+      @include color($color-orange);
+    }
   }
 }

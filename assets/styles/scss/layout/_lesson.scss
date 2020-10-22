@@ -1,0 +1,78 @@
+.lesson {
+  &__content {
+    margin-top: 80px;
+    margin-left: 34px;
+    color: $color-violet-dark;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    text-transform: uppercase;
+    font-size: 18px;
+    @include line-height;
+    letter-spacing: $letter-spacing;
+  }
+  &__advantages {
+    margin-top: 18px;
+  }
+  .minus-lesson {
+    &__item {
+      position: relative;
+      &::before {
+        @include absolute;
+        width: 20px;
+        height: 20px;
+        left: -34px;
+        content: "-";
+        text-align: center;
+        box-shadow: $box-shadow-icon;
+        border-radius: 50%;
+      }
+    }
+  }
+  .plus-lesson {
+    margin-top: 20px;
+    &__item {
+      position: relative;
+      &::before {
+        @include absolute;
+        width: 20px;
+        height: 20px;
+        left: -34px;
+        content: "+";
+        text-align: center;
+        box-shadow: $box-shadow-icon;
+        border-radius: 50%;
+        color: $color-orange;
+      }
+    }
+  }
+  .lesson__column:nth-child(2){
+    display: flex;
+    align-items: center;
+  }
+  .subscribe-lesson {
+    align-self: center;
+    background: url("../../../assets/images/lesson/btn.png") no-repeat;
+    background-color: $color-orange;
+    cursor: pointer;
+    width: 432px;
+    height: 216px;
+    position: relative;
+    &::before {
+      @include absolute;
+      width: inherit;
+      height: inherit;
+      background: $background-subscribe;
+    }
+    &__button{
+      @include color($color-white);
+      position: absolute;
+      color: $color-violet;
+      margin: 110px 0 0 53px;
+      &:hover{
+        color: $color-white;
+      }
+    }
+  }
+}

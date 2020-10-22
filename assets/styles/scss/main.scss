@@ -1,6 +1,7 @@
 // abstracts
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
+@import 'abstracts/functions';
 
 // base
 @import 'base/settings';
@@ -13,6 +14,9 @@
 // layout
 @import 'layout/header';
 @import 'layout/try';
+@import 'layout/features';
+@import 'layout/lesson';
+@import 'layout/price';
 @import 'layout/footer';
 
 // @media

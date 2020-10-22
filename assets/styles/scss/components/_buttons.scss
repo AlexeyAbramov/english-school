@@ -5,7 +5,6 @@
     font-weight: bold;
     @include line-height;
     @include border-radius;
-    background-color: $color-orange;
     padding: 15px 46px 11px 55px;
     &:hover{
         background-color: $color-red;

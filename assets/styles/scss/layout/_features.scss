@@ -1,0 +1,84 @@
+.features {
+  &__content {
+    margin-top: 77px;
+  }
+  .list-feature {
+    counter-reset: num;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &__item {
+      position: relative;
+      list-style: none;
+      flex: 0 0 313px;
+      padding: 40px 8px 65px 25px;
+      box-shadow: $box-shadow-1;
+      @include border-radius;
+      &::before {
+        position: absolute;
+        counter-increment: num;
+        content: counter(num);
+        top: 10px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 72px;
+        line-height: 120%;
+        color: $color-orange;
+        z-index: 1;
+      }
+      &:nth-child(2) {
+        background-color: $color-violet;
+        & .list-feature__title,
+        & .list-feature__text {
+          color: $color-white;
+        }
+      }
+      &:nth-child(3){
+        background-color: $color-orange;
+        & .list-feature__text{
+          color: $color-white;
+        }
+      }
+      &:nth-child(2)::before {
+        left: 20px;
+      }
+      &:nth-child(3)::before {
+        top: 8px;
+        left: 16px;
+        color: $color-violet;
+      }
+      &:nth-child(4)::before {
+        top: 7px;
+        left: 14px;
+      }
+    }
+    &__heading {
+      display: flex;
+      position: relative;
+      height: 49px;
+    }
+    &__circle {
+      width: 49px;
+      height: 100%;
+      position: absolute;
+      border-radius: 50%;
+      background-color: $color-orange-light-1;
+    }
+    &__title {
+      font-size: 18px;
+      color: $color-violet-dark;
+      font-family: "ProximaNova", sans-serif;
+      text-transform: uppercase;
+      @include line-height;
+      letter-spacing: $letter-spacing;
+      margin-left: calc(49px + 15px);
+    }
+    &__text {
+      margin-top: 39px;
+      line-height: 140%;
+      font-weight: 500;
+      color: $color-grey-description;
+    }
+  }
+}

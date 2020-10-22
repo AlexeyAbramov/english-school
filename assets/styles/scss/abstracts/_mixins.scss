@@ -17,8 +17,8 @@
 }
 //hover-effect
 @mixin hover-effect {
-    background: $color-background;
-    cursor: pointer;
+  background: $color-background;
+  cursor: pointer;
 }
 //border
 @mixin border-radius {
@@ -39,4 +39,24 @@
   @include border-radius;
   background-color: $color-white;
   box-shadow: $box-shadow-icon;
+}
+//buttons-background-colors
+@mixin color($color) {
+  @if $color == $color-white{
+    color: $color-black;
+    background-color: $color;
+  } @else{
+    background-color: $color;
+  }
+  &:hover {
+    @if $color == $color-violet {
+      background-color: $color-violet-hover;
+    } @else if $color == $color-orange {
+      background-color: $color-red;
+    } @else if $color == $color-white {
+      background-color: $color-violet;
+    } @else {
+      @error "Unknown direction #{$color}.";
+    }
+  }
 }

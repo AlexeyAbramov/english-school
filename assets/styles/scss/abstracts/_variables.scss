@@ -4,22 +4,34 @@ $color-background: #faefe3;
 $color-violet: #4643d3;
 $color-violet-light: #5856d7;
 $color-violet-dark: #0d006a;
+$color-violet-hover: #0400cc;
 $color-orange: #fe805c;
-$color-red:#FD3800;
+$color-red: #fd3800;
 $color-orange-light-1: #f5e3d6;
 $color-orange-light-2: #fef2ee;
 $color-grey-description: #afafbd;
 $color-grey-text: #443e3e;
 $color-white: #fff;
+$color-black: #000;
 
 //box-shadow
 
-$box-shadow-1: 1px 10px 10px rgba(102, 62, 51, 0.02), 10px 20px 20px rgba(102, 62, 51, 0.04), 20px 30px 30px rgba(102, 62, 51, 0.06), 55px 65px 44px rgba(197, 104, 78, 0.13);
-$box-shadow-2: 1px 10px 10px rgba(51, 62, 102, 0.02), 10px 20px 20px rgba(51, 68, 102, 0.04), 20px 30px 30px rgba(51, 68, 102, 0.06), 55px 65px 44px rgba(78, 125, 197, 0.13);
-$box-shadow-icon:1px 1px 1px rgba(102, 62, 51, 0.02), 1px 2px 2px rgba(102, 62, 51, 0.04), 2px 3px 3px rgba(102, 62, 51, 0.06), 5px 6px 4px rgba(197, 104, 78, 0.13);
+$box-shadow-1: 1px 10px 10px rgba(102, 62, 51, 0.02),
+  10px 20px 20px rgba(102, 62, 51, 0.04), 20px 30px 30px rgba(102, 62, 51, 0.06),
+  55px 65px 44px rgba(197, 104, 78, 0.13);
+$box-shadow-2: 1px 10px 10px rgba(51, 62, 102, 0.02),
+  10px 20px 20px rgba(51, 68, 102, 0.04), 20px 30px 30px rgba(51, 68, 102, 0.06),
+  55px 65px 44px rgba(78, 125, 197, 0.13);
+$box-shadow-icon: 1px 1px 1px rgba(102, 62, 51, 0.02),
+  1px 2px 2px rgba(102, 62, 51, 0.04), 2px 3px 3px rgba(102, 62, 51, 0.06),
+  5px 6px 4px rgba(197, 104, 78, 0.13);
 //background
 
-$background-orange: linear-gradient(269.93deg, #FE805C 0.09%, rgba(254, 128, 92, 0) 99.97%);
+$background-subscribe: linear-gradient(
+  269.93deg,
+  #fe805c 0.09%,
+  rgba(254, 128, 92, 0) 99.97%
+);
 
 //letter-spacing
 
