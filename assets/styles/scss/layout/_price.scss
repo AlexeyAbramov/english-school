@@ -1,0 +1,87 @@
+.price{
+    &__content{
+        padding: 80px 0;
+    }
+    &__heading{
+        text-align: center;
+    }
+    &__title{
+        text-transform: uppercase;
+        font-size: 36px;
+        @include line-height;
+        color: $color-violet;
+        font-family: 'ProximaNova', sans-serif;
+    }
+    .lesson-price{
+        display: flex;
+        justify-content: center;
+        margin-top: 37px;
+        text-transform: uppercase;
+        font-family: 'ProximaNova', sans-serif;
+        color: $color-white;
+        &__60,
+        &__90{
+            flex: 0 0 312px;
+            @include border-radius;
+            text-align: center;
+            padding: 23px 45px 39px 38px;
+            box-shadow: $box-shadow-2;
+        }
+        &__60{
+            background-color: $color-violet;
+            .lesson-price__time{
+                background-color: $color-violet-light;
+            }
+            .lesson-price__button{
+                @include color($color-orange);
+            }
+        }
+        &__90{
+            background-color: $color-orange;
+            margin-left: 32px;
+            .lesson-price__time{
+                background-color: $color-white;
+                color: $color-orange;
+            }
+            .lesson-price__button{
+                @include color($color-violet);
+            }
+        }
+        &__time{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+        &__min{
+            font-size: 18px;
+            line-height: 100%;
+        }
+        &__count{
+            display: block;
+            font-size: 48px;
+            line-height: 100%;
+        }
+        &__title{
+            font-size: 18px;
+            letter-spacing: $letter-spacing;
+        }
+        &__cost{
+            font-size: 42px;
+            @include line-height;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        &__button{
+            display: block;
+            margin-top: 10px;
+            padding: 13px 31px;
+            font-size: 18px;
+            @include line-height;
+            letter-spacing: $letter-spacing;
+        }
+    }
+}

@@ -59,6 +59,7 @@
     width: 432px;
     height: 216px;
     position: relative;
+    box-shadow: $box-shadow-1;
     &::before {
       @include absolute;
       width: inherit;
