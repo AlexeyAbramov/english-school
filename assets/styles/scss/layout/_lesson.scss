@@ -51,7 +51,7 @@
     display: flex;
     align-items: center;
   }
-  .subscribe-lesson {
+  .subscribe-lesson{
     align-self: center;
     background: url("../../../assets/images/lesson/btn.png") no-repeat;
     background-color: $color-orange;
@@ -67,12 +67,17 @@
       background: $background-subscribe;
     }
     &__button{
+      border: none;
       @include color($color-white);
       position: absolute;
       color: $color-violet;
       margin: 110px 0 0 53px;
+      cursor: pointer;
       &:hover{
         color: $color-white;
+      }
+      &:focus{
+        outline: none;
       }
     }
   }

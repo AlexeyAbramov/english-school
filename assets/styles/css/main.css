@@ -13,6 +13,7 @@
 
 .main {
   margin-top: 80px;
+  background: url("../../../assets/images/bg.png") no-repeat 64% 115%;
 }
 
 a {
@@ -155,9 +156,98 @@ h2 {
   line-height: 122.222222222%;
   border-radius: 24px;
   padding: 15px 46px 11px 55px;
+  transition: margin 0s, padding 0s, 0.4s ease;
 }
 .btn:hover {
   background-color: #fd3800;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal__content {
+  align-self: center;
+  background: url("../../../assets/images/lesson/modal.png") no-repeat;
+  background-color: #fe805c;
+  width: 432px;
+  height: 348px;
+  top: calc(50% - 216px);
+  left: calc(50% - 174px);
+  position: fixed;
+  box-shadow: 1px 10px 10px rgba(102, 62, 51, 0.02), 10px 20px 20px rgba(102, 62, 51, 0.04), 20px 30px 30px rgba(102, 62, 51, 0.06), 55px 65px 44px rgba(197, 104, 78, 0.13);
+  z-index: 1;
+  border-radius: 24px;
+}
+.modal__content::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(269.93deg, #fe805c 0.09%, rgba(254, 128, 92, 0) 99.97%);
+  border-radius: 24px;
+}
+.modal__close {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  color: #fe805c;
+  transform: rotate(45deg);
+  width: 24px;
+  height: 24px;
+  top: 17px;
+  right: 17px;
+  background-color: #fef2ee;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 4;
+}
+.modal .form-modal {
+  position: absolute;
+  z-index: 3;
+  text-align: center;
+}
+.modal .form-modal__title {
+  margin-top: 31px;
+  font-size: 36px;
+  line-height: 122.222222222%;
+  color: #fff;
+  text-transform: uppercase;
+}
+.modal .form-modal__inputs {
+  width: 66.6%;
+  margin: 0 auto;
+}
+.modal .form-modal input {
+  border: none;
+  width: 100%;
+  padding: 17px 60px 17px 31px;
+  border-radius: 24px;
+  line-height: 100%;
+  margin-top: 13px;
+}
+.modal .form-modal input:focus {
+  outline: none;
+}
+.modal .form-modal input::placeholder {
+  font-family: ProximaNova;
+  font-size: 16px;
+  line-height: 100%;
+}
+.modal .form-modal input[type=submit] {
+  background-color: #4643d3;
+  padding: 13px 0;
+  cursor: pointer;
+}
+.modal .form-modal input[type=submit]:hover {
+  background-color: #0400cc;
 }
 
 .header {
@@ -451,17 +541,22 @@ h2 {
   background: linear-gradient(269.93deg, #fe805c 0.09%, rgba(254, 128, 92, 0) 99.97%);
 }
 .lesson .subscribe-lesson__button {
+  border: none;
   color: #000;
   background-color: #fff;
   position: absolute;
   color: #4643d3;
   margin: 110px 0 0 53px;
+  cursor: pointer;
 }
 .lesson .subscribe-lesson__button:hover {
   background-color: #4643d3;
 }
 .lesson .subscribe-lesson__button:hover {
   color: #fff;
+}
+.lesson .subscribe-lesson__button:focus {
+  outline: none;
 }
 
 .price__content {
@@ -553,6 +648,80 @@ h2 {
   font-size: 18px;
   line-height: 122.222222222%;
   letter-spacing: 1.6px;
+}
+
+.footer {
+  height: 120px;
+  background-color: #4643d3;
+}
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 22px;
+}
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 70%;
+}
+.footer__contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .socials-footer__list,
+.footer .callback-footer__list {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .socials-footer__list {
+  width: 144px;
+}
+.footer .socials-footer__item {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.footer .socials-footer__item-vk {
+  background: #7294c7;
+}
+.footer .socials-footer__item-instagram {
+  background: linear-gradient(43.94deg, #eea054 16.16%, #d64763 50.11%, #b62a99 83.68%);
+}
+.footer .socials-footer__item-skype {
+  background: #00a9e7;
+}
+.footer .callback-footer {
+  font-family: ProximaNova;
+  font-size: 18px;
+  text-transform: uppercase;
+  flex: 0 1 54%;
+}
+.footer .callback-footer__phone, .footer .callback-footer__mail {
+  margin-left: 10px;
+  color: #fff;
+}
+.footer .callback-footer__phone {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.footer .callback-footer__item {
+  display: flex;
+  align-items: center;
+}
+.footer .copyright-footer {
+  margin-top: 23px;
+  font-family: ProximaNova;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  width: 115%;
+}
+.footer .copyright-footer a {
+  color: inherit;
 }
 
 /*# sourceMappingURL=main.css.map */

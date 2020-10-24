@@ -1,12 +1,13 @@
-.btn{
-    text-transform: uppercase;
-    color: $color-white;
-    font-size: 18px;
-    font-weight: bold;
-    @include line-height;
-    @include border-radius;
-    padding: 15px 46px 11px 55px;
-    &:hover{
-        background-color: $color-red;
-    }
+.btn {
+  text-transform: uppercase;
+  color: $color-white;
+  font-size: 18px;
+  font-weight: bold;
+  @include line-height;
+  @include border-radius;
+  padding: 15px 46px 11px 55px;
+  transition: margin 0s, padding 0s, .4s ease;
+  &:hover {
+    background-color: $color-red;
+  }
 }

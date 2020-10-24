@@ -118,7 +118,8 @@
                             <div class="lesson__advantages">
                                 <ul class="lesson__minus minus-lesson">
                                     <li class="minus-lesson__item">не будет скучных упражнений на перевод,</li>
-                                    <li class="minus-lesson__item">не будет пылящейся со школьных лет таблицы времен глаголов</li>
+                                    <li class="minus-lesson__item">не будет пылящейся со школьных лет таблицы времен
+                                        глаголов</li>
                                     <li class="minus-lesson__item">не будет нудных объяснений грамматики.</li>
                                 </ul>
                                 <ul class="lesson__plus plus-lesson">
@@ -128,12 +129,30 @@
                                     <li class="plus-lesson__item">учим новые слова по ассоциациям,</li>
                                     <li class="plus-lesson__item">проводим встречи с носителями языка</li>
                                 </ul>
-                                <span class="lesson__span">и всегда составляем программу, основываясь на ваших предпочтениях.</span>
+                                <span class="lesson__span">и всегда составляем программу, основываясь на ваших
+                                    предпочтениях.</span>
                             </div>
                         </div>
                         <div class="lesson__column">
                             <div class="lesson__subscribe subscribe-lesson">
-                                <a href="#" class="subscribe-lesson__button btn">Записаться на урок</a>
+                                <button class="subscribe-lesson__button btn" id="subscribe">Записаться на урок</button>
+                            </div>
+                        </div>
+                        <div class="modal" id="lesson__modal">
+                            <div class="modal__content">
+                                <span class="modal__close" id="modal__close">+</span>
+                                <form class="modal__form form-modal" id="form__subscribe">
+                                    <h3 class="form-modal__title">Запись на урок</h3>
+                                    <div class="form-modal__inputs">
+                                        <input class="form-modal__name" type="text" placeholder="Ваше имя" name="name"
+                                            autocomplete="off">
+                                        <input class="form-modal__tel" type="tel" placeholder="Ваш телефон" name="tel"
+                                            autocomplete="off">
+                                        <input class="form-modal__mail" type="email" placeholder="Ваш e-mail"
+                                            name="mail" autocomplete="off">
+                                        <input class="form-modal__btn btn" type="submit" value="Записаться">
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -170,6 +189,61 @@
             </section>
             <!--/PRICE-->
         </main>
+        <!--FOOTER-->
+        <footer class="footer">
+            <div class="footer__inner _container">
+                <div class="footer__content">
+                    <div class="footer__info">
+                        <div class="footer__contacts">
+                            <div class="footer__socials socials-footer">
+                                <ul class="socials-footer__list">
+                                    <li class="socials-footer__item socials-footer__item-vk">
+                                        <a class="socials-footer__link" href="#">
+                                            <img class="socials-footer__img" src="./assets/images/footer/vk.png"
+                                                alt="vk">
+                                        </a>
+                                    </li>
+                                    <li class="socials-footer__item socials-footer__item-instagram">
+                                        <a class="socials-footer__link" href="#">
+                                            <img class="socials-footer__img" src="./assets/images/footer/instagram.png"
+                                                alt="instagram">
+                                        </a>
+                                    </li>
+                                    <li class="socials-footer__item socials-footer__item-skype">
+                                        <a class="socials-footer__link" href="#">
+                                            <img class="socials-footer__img" src="./assets/images/footer/skype.png"
+                                                alt="skype">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__callback callback-footer">
+                                <ul class="callback-footer__list">
+                                    <li class="callback-footer__item"><img src="./assets/images/footer/phone.png"
+                                            alt="phone"><a class="callback-footer__phone"
+                                            href="tel:79068118299">+79068118299</a></li>
+                                    <li class="callback-footer__item"><img src="./assets/images/footer/mail.png"
+                                            alt="mail"><a class="callback-footer__mail"
+                                            href="mailto:122334567@mail.ru">122334567@mail.ru</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer__copyright copyright-footer">
+                            <span class="copyright-footer__protect">2020 © Все права защищены</span>
+                            <a href="#" class="copyright-footer__terms">Пользовательское соглашение</a>
+                            <a href="#" class="copyright-footer__offer">Публичная оферта</a>
+                            <a href="#" class="copyright-footer__policy">Политика конфиденциальности</a>
+                        </div>
+                    </div>
+                    <div class="footer__logo logo-footer">
+                        <a class="logo-footer__link" href="#">
+                            <img class="logo-footer__img" src="./assets/images/footer/logo.png" alt="footer__img">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--/FOOTER-->
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./assets/script/script.js"></script>
