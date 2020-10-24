@@ -5,6 +5,7 @@
     @include border-radius;
     box-shadow: $box-shadow-1;
     padding-bottom: 34px;
+    background-color: $color-white;
   }
   &__row {
     display: flex;

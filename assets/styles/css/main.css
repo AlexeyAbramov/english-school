@@ -259,6 +259,7 @@ h2 {
   justify-content: space-between;
   align-items: center;
   height: 96px;
+  color: #fff;
 }
 .header .nav-header {
   flex: 0 1 64%;
@@ -297,6 +298,7 @@ h2 {
   border-radius: 24px;
   box-shadow: 1px 10px 10px rgba(102, 62, 51, 0.02), 10px 20px 20px rgba(102, 62, 51, 0.04), 20px 30px 30px rgba(102, 62, 51, 0.06), 55px 65px 44px rgba(197, 104, 78, 0.13);
   padding-bottom: 34px;
+  background-color: #fff;
 }
 .try__row {
   display: flex;
@@ -416,6 +418,9 @@ h2 {
   color: #fe805c;
   z-index: 1;
 }
+.features .list-feature__item:nth-child(1), .features .list-feature__item:nth-child(4) {
+  background-color: #fff;
+}
 .features .list-feature__item:nth-child(2) {
   background-color: #4643d3;
 }
@@ -526,6 +531,7 @@ h2 {
   align-self: center;
   background: url("../../../assets/images/lesson/btn.png") no-repeat;
   background-color: #fe805c;
+  border-radius: 24px;
   cursor: pointer;
   width: 432px;
   height: 216px;
@@ -533,12 +539,23 @@ h2 {
   box-shadow: 1px 10px 10px rgba(102, 62, 51, 0.02), 10px 20px 20px rgba(102, 62, 51, 0.04), 20px 30px 30px rgba(102, 62, 51, 0.06), 55px 65px 44px rgba(197, 104, 78, 0.13);
 }
 .lesson .subscribe-lesson::before {
+  border-radius: 24px;
   position: absolute;
   display: block;
   content: "";
   width: inherit;
   height: inherit;
   background: linear-gradient(269.93deg, #fe805c 0.09%, rgba(254, 128, 92, 0) 99.97%);
+}
+.lesson .subscribe-lesson__title {
+  position: absolute;
+  font-family: ProximaNova;
+  font-size: 18px;
+  line-height: 122.222222222%;
+  text-transform: uppercase;
+  color: #fff;
+  left: 70px;
+  top: 35px;
 }
 .lesson .subscribe-lesson__button {
   border: none;
@@ -651,13 +668,12 @@ h2 {
 }
 
 .footer {
-  height: 120px;
   background-color: #4643d3;
 }
 .footer__content {
   display: flex;
   justify-content: space-between;
-  margin-top: 22px;
+  padding: 22px 0;
 }
 .footer__info {
   display: flex;
@@ -714,14 +730,317 @@ h2 {
 }
 .footer .copyright-footer {
   margin-top: 23px;
+  text-align: center;
   font-family: ProximaNova;
   color: #fff;
-  display: flex;
   justify-content: space-between;
-  width: 115%;
+  width: 146%;
 }
 .footer .copyright-footer a {
   color: inherit;
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+  body {
+    background-color: #faefe3;
+  }
+
+  .lesson .minus-lesson__item::before {
+    background-color: #fff;
+  }
+  .lesson .plus-lesson__item::before {
+    background-color: #fff;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1439px) {
+  body {
+    background-color: #fff;
+  }
+
+  .header .logo-header__img {
+    max-width: 216px;
+  }
+  .header .nav-header__item {
+    padding: 0 40px;
+  }
+
+  .main {
+    background-position-x: 100%;
+  }
+
+  .try .column-qa {
+    flex: 0 1 43%;
+    margin: 90px 0 0 24%;
+  }
+  .try .column-qa__a {
+    margin: 46px 0 0 0;
+  }
+  .try .column-about {
+    flex: 0 1 39%;
+  }
+
+  .features .list-feature {
+    justify-content: center;
+  }
+  .features .list-feature__item:nth-child(even) {
+    margin-left: 28px;
+  }
+  .features .list-feature__item:nth-child(n+2) {
+    margin-top: 28px;
+  }
+
+  .footer .copyright-footer {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 999px) {
+  body {
+    background-color: #fff;
+  }
+
+  .header .logo-header__img {
+    max-width: 192px;
+  }
+  .header .nav-header__item {
+    padding: 0 15px;
+  }
+
+  .main {
+    background-position-x: 100%;
+  }
+
+  .try__content {
+    background: url(../../../assets/images/media/try-bg.jpg) no-repeat left center;
+  }
+  .try__row {
+    flex-direction: column;
+  }
+  .try .column-qa {
+    margin: 45px 0 0 47%;
+  }
+  .try .column-qa__q:before {
+    top: 10px;
+  }
+  .try .column-qa__a {
+    margin: 46px 0 0 0;
+  }
+  .try .column-qa__a::before {
+    top: 20px;
+  }
+  .try .column-about {
+    margin: 25px 23px 0 0;
+  }
+  .try .column-about__text {
+    margin-left: 50%;
+    margin-top: 0;
+  }
+  .try .button-try {
+    margin: 40px 23px 0 0;
+  }
+
+  .features .list-feature {
+    justify-content: center;
+  }
+  .features .list-feature__item:nth-child(even) {
+    margin-left: 28px;
+  }
+  .features .list-feature__item:nth-child(n+2) {
+    margin-top: 28px;
+  }
+
+  .lesson__content {
+    flex-direction: column;
+    margin-left: 19%;
+  }
+  .lesson .subscribe-lesson {
+    margin-top: 70px;
+  }
+
+  .footer .copyright-footer {
+    font-size: 14px;
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+  .footer .callback-footer__list {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 411px) and (max-width: 767px) {
+  body {
+    background-color: #fff;
+  }
+
+  .header .logo-header__img {
+    max-width: 192px;
+  }
+  .header .nav-header__item:not(:nth-child(2)) {
+    display: none;
+  }
+
+  .main {
+    background-position-x: 100%;
+  }
+
+  .try__content {
+    background: url(../../../assets/images/media/try-411bg.jpg) no-repeat left center;
+  }
+  .try__row {
+    flex-direction: column;
+  }
+  .try .column-qa {
+    margin: 45px 0 0 47%;
+  }
+  .try .column-qa__q:before {
+    top: 10px;
+  }
+  .try .column-qa__a {
+    margin: 46px 0 0 0;
+  }
+  .try .column-qa__a::before {
+    top: 20px;
+  }
+  .try .column-about {
+    margin: 25px 23px 0 0;
+  }
+  .try .column-about__text {
+    margin-left: 50%;
+    margin-top: 0;
+  }
+  .try .button-try {
+    margin: 40px 23px 0 0;
+  }
+
+  .features .list-feature {
+    justify-content: center;
+  }
+  .features .list-feature__item {
+    margin-left: 0;
+  }
+  .features .list-feature__item:nth-child(n+1) {
+    margin-top: 28px;
+  }
+
+  .lesson__content {
+    flex-direction: column;
+    margin-left: 19%;
+  }
+  .lesson .subscribe-lesson {
+    margin-top: 70px;
+  }
+
+  .footer .copyright-footer {
+    font-size: 14px;
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+  .footer .callback-footer__list {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 320px) {
+  ._container {
+    padding: 0 5px;
+  }
+
+  .header .logo-header__img {
+    max-width: 102px;
+  }
+  .header .nav-header__item:not(:nth-child(2)) {
+    display: none;
+  }
+
+  .try__content {
+    background-position-x: -70px;
+  }
+  .try__row {
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.48);
+  }
+  .try .column-qa {
+    margin: 0 0 0 72px;
+    padding-top: 50px;
+    font-size: 14px;
+  }
+  .try .column-qa__a {
+    margin: 35px 0 0 0;
+    background: none;
+  }
+  .try .column-about {
+    margin: 14px 23px 0 0;
+  }
+  .try .column-about__title {
+    font-size: 34px;
+    letter-spacing: 1px;
+  }
+  .try .column-about__text {
+    margin-top: 35px;
+  }
+  .try .button-try {
+    text-align: center;
+    margin: 20px 0 0 0;
+  }
+  .try .button-try__link {
+    padding: 10px 15px;
+    letter-spacing: 1.6px;
+  }
+
+  .features .list-feature__item:not(:nth-child(1)) {
+    margin-top: 50px;
+  }
+
+  .lesson__content {
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .lesson__column:nth-child(1) {
+    margin-left: 34px;
+  }
+  .lesson .subscribe-lesson {
+    width: 310px;
+    margin-top: 30px;
+  }
+  .lesson .subscribe-lesson__title {
+    font-size: 16px;
+    font-weight: normal;
+    left: 40px;
+  }
+  .lesson .subscribe-lesson__button {
+    margin: 110px 0 0 23px;
+  }
+
+  .btn {
+    font-size: 14px;
+  }
+
+  .modal__content {
+    width: 320px;
+    left: calc(50% - 160px);
+  }
+  .modal .form-modal__title {
+    font-size: 26px;
+    margin-top: 45px;
+  }
+
+  .price__title {
+    font-size: 24px;
+  }
+  .price .lesson-price {
+    flex-direction: column;
+  }
+  .price .lesson-price__90 {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+
+  .footer__contacts {
+    flex-direction: column;
+  }
+  .footer .callback-footer {
+    margin: 10px 0 0 37px;
+  }
+  .footer .callback-footer__list {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

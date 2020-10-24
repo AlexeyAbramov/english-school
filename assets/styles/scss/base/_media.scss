@@ -1,3 +1,384 @@
-// @media screen and (max-width: 375px){
+// width 1140px
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+  body {
+    background-color: $color-background;
+  }
+  //lesson
+  .lesson {
+    .minus-lesson {
+      &__item::before {
+        background-color: $color-white;
+      }
+    }
+    .plus-lesson {
+      &__item::before {
+        background-color: $color-white;
+      }
+    }
+  }
+}
 
-//   }
+// width 1000px
+@media screen and (min-width: 1000px) and (max-width: 1439px) {
+  body {
+    background-color: $color-white;
+  }
+  //header
+  .header {
+    .logo-header {
+      &__img {
+        max-width: 216px;
+      }
+    }
+    .nav-header {
+      &__item {
+        padding: 0 40px;
+      }
+    }
+  }
+  //main
+  .main {
+    background-position-x: 100%;
+  }
+  //try
+  .try {
+    .column-qa {
+      flex: 0 1 43%;
+      margin: 90px 0 0 24%;
+      &__a {
+        margin: 46px 0 0 0;
+      }
+    }
+    .column-about {
+      flex: 0 1 39%;
+    }
+  }
+  //features
+  .features {
+    .list-feature {
+      justify-content: center;
+      &__item:nth-child(even) {
+        margin-left: 28px;
+      }
+      &__item:nth-child(n + 2) {
+        margin-top: 28px;
+      }
+    }
+  }
+  //footer
+  .footer {
+    .copyright-footer {
+      font-size: 14px;
+    }
+  }
+}
+
+// width 768px
+@media screen and (min-width: 768px) and (max-width: 999px) {
+  body {
+    background-color: $color-white;
+  }
+  //header
+  .header {
+    .logo-header {
+      &__img {
+        max-width: 192px;
+      }
+    }
+    .nav-header {
+      &__item {
+        padding: 0 15px;
+      }
+    }
+  }
+  //main
+  .main {
+    background-position-x: 100%;
+  }
+  //try
+  .try {
+    &__content {
+      background: url(../../../assets/images/media/try-bg.jpg) no-repeat left
+        center;
+    }
+    &__row {
+      flex-direction: column;
+    }
+    .column-qa {
+      margin: 45px 0 0 47%;
+      &__q:before {
+        top: 10px;
+      }
+      &__a {
+        margin: 46px 0 0 0;
+        &::before {
+          top: 20px;
+        }
+      }
+    }
+    .column-about {
+      margin: 25px 23px 0 0;
+      &__text {
+        margin-left: 50%;
+        margin-top: 0;
+      }
+    }
+    .button-try {
+      margin: 40px 23px 0 0;
+    }
+  }
+  //features
+  .features {
+    .list-feature {
+      justify-content: center;
+      &__item:nth-child(even) {
+        margin-left: 28px;
+      }
+      &__item:nth-child(n + 2) {
+        margin-top: 28px;
+      }
+    }
+  }
+  //lesson
+  .lesson {
+    &__content {
+      flex-direction: column;
+      margin-left: 19%;
+    }
+    .subscribe-lesson {
+      margin-top: 70px;
+    }
+  }
+  //footer
+  .footer {
+    .copyright-footer {
+      font-size: 14px;
+      flex-direction: column;
+      flex-direction: column-reverse;
+    }
+    .callback-footer {
+      &__list {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+// width 411px
+@media screen and (min-width: 411px) and (max-width: 767px) {
+  body {
+    background-color: $color-white;
+  }
+  //header
+  .header {
+    .logo-header {
+      &__img {
+        max-width: 192px;
+      }
+    }
+    .nav-header {
+      &__item:not(:nth-child(2)) {
+        display: none;
+      }
+    }
+  }
+  //main
+  .main {
+    background-position-x: 100%;
+  }
+  //try
+  .try {
+    &__content {
+      background: url(../../../assets/images/media/try-411bg.jpg) no-repeat left
+        center;
+    }
+    &__row {
+      flex-direction: column;
+    }
+    .column-qa {
+      margin: 45px 0 0 47%;
+      &__q:before {
+        top: 10px;
+      }
+      &__a {
+        margin: 46px 0 0 0;
+        &::before {
+          top: 20px;
+        }
+      }
+    }
+    .column-about {
+      margin: 25px 23px 0 0;
+      &__text {
+        margin-left: 50%;
+        margin-top: 0;
+      }
+    }
+    .button-try {
+      margin: 40px 23px 0 0;
+    }
+  }
+  //features
+  .features {
+    .list-feature {
+      justify-content: center;
+      &__item {
+        margin-left: 0;
+      }
+      &__item:nth-child(n + 1) {
+        margin-top: 28px;
+      }
+    }
+  }
+  //lesson
+  .lesson {
+    &__content {
+      flex-direction: column;
+      margin-left: 19%;
+    }
+    .subscribe-lesson {
+      margin-top: 70px;
+    }
+  }
+  //footer
+  .footer {
+    .copyright-footer {
+      font-size: 14px;
+      flex-direction: column;
+      flex-direction: column-reverse;
+    }
+    .callback-footer {
+      &__list {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+// width 320px
+@media screen and (max-width: 320px) {
+  ._container {
+    padding: 0 5px;
+  }
+  //header
+  .header {
+    .logo-header {
+      &__img {
+        max-width: 102px;
+      }
+    }
+    .nav-header {
+      &__item:not(:nth-child(2)) {
+        display: none;
+      }
+    }
+  }
+  //try
+  .try {
+    &__content {
+      background-position-x: -70px;
+    }
+    &__row {
+      flex-direction: column;
+      background: rgba(255, 255, 255, 0.48);
+    }
+    .column-qa {
+      margin: 0 0 0 72px;
+      padding-top: 50px;
+      font-size: 14px;
+
+      &__a {
+        margin: 35px 0 0 0;
+        background: none;
+      }
+    }
+    .column-about {
+      margin: 14px 23px 0 0;
+      &__title {
+        font-size: 34px;
+        letter-spacing: 1px;
+      }
+      &__text{
+          margin-top: 35px;
+      }
+    }
+    .button-try{
+        text-align: center;
+        margin: 20px 0 0 0;
+        &__link{
+            padding: 10px 15px;
+            letter-spacing: 1.6px;
+        }
+    }
+  }
+  //features
+  .features {
+    .list-feature {
+      &__item:not(:nth-child(1)) {
+        margin-top: 50px;
+      }
+    }
+  }
+  //lesson
+  .lesson {
+    &__content {
+      flex-direction: column;
+      margin-left: 0;
+    }
+    &__column:nth-child(1) {
+      margin-left: 34px;
+    }
+    .subscribe-lesson {
+      width: 310px;
+      margin-top: 30px;
+      &__title {
+        font-size: 16px;
+        font-weight: normal;
+        left: 40px;
+      }
+      &__button {
+        margin: 110px 0 0 23px;
+      }
+    }
+  }
+  .btn {
+    font-size: 14px;
+  }
+  .modal {
+    &__content {
+      width: 320px;
+      left: calc(50% - 160px);
+    }
+    .form-modal {
+      &__title {
+        font-size: 26px;
+        margin-top: 45px;
+      }
+    }
+  }
+  //price
+  .price {
+    &__title {
+      font-size: 24px;
+    }
+    .lesson-price {
+      flex-direction: column;
+      &__90 {
+        margin-left: 0;
+        margin-top: 50px;
+      }
+    }
+  }
+  //footer
+  .footer {
+    &__contacts {
+      flex-direction: column;
+    }
+    .callback-footer {
+      margin: 10px 0 0 37px;
+      &__list {
+        flex-direction: column;
+      }
+    }
+  }
+}

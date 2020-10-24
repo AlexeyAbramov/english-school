@@ -5,6 +5,7 @@
   &__content {
     @include dflexsbcenter;
     height: 96px;
+    color: $color-white;
   }
   //nav
   .nav-header {

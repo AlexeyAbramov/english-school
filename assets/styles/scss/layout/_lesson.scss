@@ -47,36 +47,48 @@
       }
     }
   }
-  .lesson__column:nth-child(2){
+  .lesson__column:nth-child(2) {
     display: flex;
     align-items: center;
   }
-  .subscribe-lesson{
+  .subscribe-lesson {
     align-self: center;
     background: url("../../../assets/images/lesson/btn.png") no-repeat;
     background-color: $color-orange;
+    @include border-radius;
     cursor: pointer;
     width: 432px;
     height: 216px;
     position: relative;
     box-shadow: $box-shadow-1;
     &::before {
+      @include border-radius;
       @include absolute;
       width: inherit;
       height: inherit;
       background: $background-subscribe;
     }
-    &__button{
+    &__title {
+      position: absolute;
+      font-family: ProximaNova;
+      font-size: 18px;
+      @include line-height;
+      text-transform: uppercase;
+      color: $color-white;
+      left: 70px;
+      top: 35px;
+    }
+    &__button {
       border: none;
       @include color($color-white);
       position: absolute;
       color: $color-violet;
       margin: 110px 0 0 53px;
       cursor: pointer;
-      &:hover{
+      &:hover {
         color: $color-white;
       }
-      &:focus{
+      &:focus {
         outline: none;
       }
     }
