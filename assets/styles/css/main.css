@@ -937,7 +937,7 @@ h2 {
     flex-direction: column;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 375px) {
   ._container {
     padding: 0 5px;
   }
@@ -984,6 +984,9 @@ h2 {
     letter-spacing: 1.6px;
   }
 
+  .features .list-feature {
+    flex-direction: column;
+  }
   .features .list-feature__item:not(:nth-child(1)) {
     margin-top: 50px;
   }
@@ -994,6 +997,9 @@ h2 {
   }
   .lesson__column:nth-child(1) {
     margin-left: 34px;
+  }
+  .lesson__column:nth-child(2) {
+    justify-content: center;
   }
   .lesson .subscribe-lesson {
     width: 310px;
